@@ -4,27 +4,36 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform built with React and Node.js',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80',
-    longDescription: 'An advanced e-commerce solution featuring real-time inventory management, secure payment processing, and a responsive admin dashboard. Built with React for the frontend and Node.js/Express for the backend, utilizing MongoDB for data storage.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
+    title: 'Food Delivery Platform',
+    description: 'A full-featured food delivery platform built with React,Node.js and MongoDB',
+    image: 'src/Assets/Food-Delivery.jpg',
+    longDescription: 'Eats.com - Modern Food Delivery App. A feature-rich food delivery platform built with the MERN stack, designed for seamless ordering, secure transactions, and an intuitive user experience. The app includes real-time order management, secure authentication with Auth0, and optimized payment processing via Stripe. High-quality media is handled through Cloudinary, while the UI is crafted with TailwindCSS and Shadcn UI for a modern, responsive design. The platform ensures a smooth, efficient, and scalable food ordering experience for both customers and restaurant owners.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux','Shadcn UI','TailwindCSS','TypeScript'],
     demoUrl: '#',
     githubUrl: '#',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80',
-    longDescription: 'A real-time collaborative task management system with features like drag-and-drop task organization, team chat, and automated notifications. Implements WebSocket for real-time updates and includes comprehensive project analytics.',
-    technologies: ['React', 'Socket.io', 'PostgreSQL', 'TypeScript', 'Chart.js'],
+    title: 'Hirrd-Job Portal',
+    description: 'A modern job portal built with React, Tailwind CSS, Node.js, Clerk, Supabase, and ShadCN UI, offering seamless job searching and hiring.',
+    image: 'src/Assets/jobPortal.jpeg',
+    longDescription: 'A next-gen job portal built with React, Tailwind CSS, and Node.js, designed to streamline job searching and hiring. The platform features secure authentication with Clerk, efficient data management using Supabase, and a modern UI crafted with ShadCN UI. With seamless job listings, applications, and employer interactions, Hirrd ensures a smooth, responsive, and user-friendly experience for both job seekers and recruiters.',
+    technologies: ['React', 'Node.js', 'Clerk', 'Supabase', 'Shadcn UI','TailwindCSS'],
+    demoUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Disnep+ Clone',
+    description: '',
+    image: 'src/Assets/jobPortal.jpeg',
+    longDescription: 'A next-gen job portal built with React, Tailwind CSS, and Node.js, designed to streamline job searching and hiring. The platform features secure authentication with Clerk, efficient data management using Supabase, and a modern UI crafted with ShadCN UI. With seamless job listings, applications, and employer interactions, Hirrd ensures a smooth, responsive, and user-friendly experience for both job seekers and recruiters.',
+    technologies: ['React', 'Node.js', 'Clerk', 'Supabase', 'Shadcn UI','TailwindCSS'],
     demoUrl: '#',
     githubUrl: '#',
   },
 ];
 
 export function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
   return (
     <section className="py-20 bg-white relative">

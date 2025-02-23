@@ -16,7 +16,7 @@ const skills = [
   {
     category: 'Database',
     icon: Database,
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Firebase'],
+    skills: ['PostgreSQL', 'MongoDB', 'SQL', 'Redis', 'Firebase'],
   },
   {
     category: 'DevOps',

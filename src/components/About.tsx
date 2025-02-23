@@ -21,7 +21,7 @@ export function About() {
             className="w-full md:w-1/2"
           >
             <img
-              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80"
+              src="src/Assest/picture.jpeg"
               alt="Profile"
               className="rounded-lg shadow-lg"
             />
@@ -38,13 +38,16 @@ export function About() {
               About Me
             </h2>
             <p className="text-gray-600 mb-6">
-              As a recent entrant in the software field, I'm eager to kick-start
-              my career and apply my skills and knowledge in a dynamic and
-              innovative environment. With a strong foundation in computer
-              science and a passion for technology, I'm now looking for an
-              opportunity to join a forward-thinking organization where I can
-              learn, grow, and contribute to exciting projects that make a real
-              impact
+              I’m a highly enthusiastic and passionate coder with a strong grasp
+              of full-stack development, specializing in the MERN stack and
+              backend development with Java. I thrive in solving complex
+              problems, building scalable applications, and continuously
+              expanding my technical skill set. My goal is to contribute to
+              impactful projects in a fast-paced, innovative environment where I
+              can learn, grow, and collaborate with like-minded developers., I'm
+              now looking for an opportunity to join a forward-thinking
+              organization where I can learn, grow, and contribute to exciting
+              projects that make a real impact
             </p>
           </motion.div>
         </motion.div>
