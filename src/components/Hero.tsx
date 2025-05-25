@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import picture from '../Assets/picture.jpeg';
 const roles = ["Full Stack Developer", "Backend Developer", "Problem Solver"];
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -85,7 +86,7 @@ export function Hero() {
                     className="flex items-center justify-center mt-8 md:mt-0"
                   >
                     <img
-                      src="src/Assets/picture.jpeg"
+                      src={picture}
                       alt="Profile"
                       className="w-48 aspect-square sm:w-64 sm:aspect-square md:w-80 md:aspect-square rounded-full object-cover shadow-2xl"
                     />
