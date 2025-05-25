@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 p bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -13,19 +13,6 @@ export function About() {
           transition={{ duration: 0.8 }}
           className="flex flex-col md:flex-row items-center gap-12"
         >
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full md:w-1/2"
-          >
-            <img
-              src="src/Assest/picture.jpeg"
-              alt="Profile"
-              className="rounded-lg shadow-lg"
-            />
-          </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

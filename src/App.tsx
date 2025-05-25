@@ -5,6 +5,7 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Hero_About } from './components/Hero_About';
 
 function App() {
   return (
