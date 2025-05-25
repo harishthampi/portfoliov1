@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Briefcase, ExternalLink, X, Github, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import fdp from '../Assets/Food-Delivery.jpg';
+import hjp from '../Assets/jobPortal.jpg';
+import dc from '../Assets/jobPortal.jpg';
+import klimate from '../Assets/Klimate.jpg';
 
 const projects = [
   {
     title: 'Food Delivery Platform',
     description: 'A full-featured food delivery platform built with React,Node.js and MongoDB',
-    image: 'src/Assets/Food-Delivery.jpg',
+    image: {fdp},
     longDescription: 'Eats.com - Modern Food Delivery App. A feature-rich food delivery platform built with the MERN stack, designed for seamless ordering, secure transactions, and an intuitive user experience. The app includes real-time order management, secure authentication with Auth0, and optimized payment processing via Stripe. High-quality media is handled through Cloudinary, while the UI is crafted with TailwindCSS and Shadcn UI for a modern, responsive design. The platform ensures a smooth, efficient, and scalable food ordering experience for both customers and restaurant owners.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux','Shadcn UI','TailwindCSS','TypeScript'],
     demoUrl: 'https://fooddelivery-frontend-0hmd.onrender.com/',
@@ -16,7 +20,7 @@ const projects = [
   {
     title: 'Hirrd-Job Portal',
     description: 'A modern job portal built with React, Tailwind CSS, Node.js, Clerk, Supabase, and ShadCN UI, offering seamless job searching and hiring.',
-    image: 'src/Assets/jobPortal.jpeg',
+    image: {hjp},
     longDescription: 'A next-gen job portal built with React, Tailwind CSS, and Node.js, designed to streamline job searching and hiring. The platform features secure authentication with Clerk, efficient data management using Supabase, and a modern UI crafted with ShadCN UI. With seamless job listings, applications, and employer interactions, Hirrd ensures a smooth, responsive, and user-friendly experience for both job seekers and recruiters.',
     technologies: ['React', 'Node.js', 'Clerk', 'Supabase', 'Shadcn UI','TailwindCSS'],
     demoUrl: 'https://hirrd-sigma.vercel.app/',
@@ -26,7 +30,7 @@ const projects = [
   {
     title: 'Disney+ Clone',
     description: 'A Disney+ clone landing page built with React and styled-components, featuring a sleek navigation bar, interactive menu, and a responsive design',
-    image: 'src/Assets/jobPortal.jpeg',
+    image: {dc},
     longDescription:'A Disney+ clone landing page built with React and styled-components, featuring a sleek navigation bar, interactive menu, and a responsive design. The platform includes a dynamic hero section, a curated content grid, and a footer with social media links. The UI is crafted with styled-components for a modern, responsive, and visually appealing design. The Disney+ clone ensures a seamless, engaging, and user-friendly experience for visitors.',
     technologies: ['React', 'Node.js', 'Clerk', 'Supabase', 'Shadcn UI','TailwindCSS'],
     demoUrl: 'https://disneyplusclone-v1.netlify.app/',
@@ -35,6 +39,7 @@ const projects = [
   {
     title: 'Netflix Clone',
     description: 'A Netflix clone built with React and Redux, featuring dynamic content rendering, state management, and a responsive UI for a seamless streaming experience.',
+    image: {dc},
     technologies: ['React', 'Redux', 'JavaScript'],
     demoUrl: 'https://netflexclone-v1.netlify.app/',
     githubUrl: 'https://github.com/harishthampi/Netflix-clone',
@@ -43,7 +48,7 @@ const projects = [
   {
     title: 'Klimate',
     description: 'A weather app built with React, OpenWeatherMap API, and styled-components, offering real-time weather data, location-based forecasts, and a sleek UI.',
-    image: 'src/Assets/Klimate.jpg',
+    image: {klimate,
     technologies: ['React','Shadcn UI','TailwindCSS','TypeScript','Tanstack','OpenWeatherMap API'],
     demoUrl: 'https://klimateapp.netlify.app/',
     githubUrl: 'https://github.com/harishthampi/Klimate',
